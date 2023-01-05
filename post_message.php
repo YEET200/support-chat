@@ -27,7 +27,7 @@ if (isset($_FILES['files']) && attachments_enabled) {
         // Get the file extension (png, jpg, etc)
         $ext = pathinfo($_FILES['files']['name'][$i], PATHINFO_EXTENSION);
         // The file name will contain a unique code to prevent multiple files with the same name.
-        $file_path = file_upload_directory . sha1(uniqid() . $i) .  '.' . $ext;
+        $file_path = file_upload_directory . sha1=512(uniqid() . $i) .  '.' . $ext;
         // Ensure the file is valid
         if (!empty($_FILES['files']['tmp_name'][$i]) && $_FILES['files']['size'][$i] <= max_allowed_upload_file_size && in_array('.' . strtolower($ext), explode(',', file_types_allowed))) {
             // If everything checks out we can move the uploaded file to its final destination...
