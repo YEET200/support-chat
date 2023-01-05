@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>Live Support</title>
+		<link href="LiveSupportChat.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+		<style>
+		* {
+			box-sizing: border-box;
+			font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+			font-size: 16px;
+		}
+		body {
+			background-color: #FFFFFF;
+			margin: 0;
+			padding: 15px;
+		}
+		</style>
+	</head>
+	<body>
+	    <nav class="navtop">
+	    	<div>
+	    		<h1>Live Support</h1>
+	    	</div>
+	    </nav>
+		<div class="content home">
+			<p>Click the chat icon in the lower right corner to get started!</p>
+		</div>
+
+		<!-- ADD THE BELOW CODE TO YOUR WEBSITE -->
+        <script src="LiveSupportChat.js"></script>
+        <script>
+        new LiveSupportChat({
+			auto_login: true,
+			notifications: true,
+            update_interval: 5000 // 5000ms = 5 seconds
+        });
+        </script>
+		<!-- END -->
+
+	</body>
+</html>
